@@ -14,10 +14,10 @@ import MediaControlCard from '../HomeList/Card1'
 				<Paper>
 					 <PrimarySearchAppBar  /> 
 				</Paper>
-					 <FormGroup>
-        <Label for="exampleText">Your Status</Label>
-        <Input type="textarea" name="text" id="exampleText" />
-      </FormGroup>
+			  <FormGroup>
+						<Label for="exampleText">Your Status</Label>
+						<Input type="textarea" name="text" id="exampleText" />
+        </FormGroup>
 				<br />
 				<MediaControlCard />
 			</Container>

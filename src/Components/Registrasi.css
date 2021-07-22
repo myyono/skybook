@@ -1,0 +1,20 @@
+.LoginBox {
+  width: 22rem;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 0 0 6px 0 rgba(0, 115, 230, 0.3);
+  margin-top: 100px;
+  padding-left: 100%;
+  position: relative;
+}
+.LoginImg {
+  width: 100px;
+  height: 5rem;
+  border-radius: 50%;
+  border: 1px solid green;
+  margin-bottom: 25px;
+}
+.box {
+  justify-content: center;
+  position: relative;
+}
