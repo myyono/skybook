@@ -3,4 +3,38 @@
   height: 100%;
   color: cornflowerblue;
   margin-bottom: 1rem;
+  position: absolute;
+  top: 50px;
+}
+h2 {
+  position: absolute;
+  width: 297px;
+  height: 78px;
+  left: 200px;
+  text-align: center;
+  top: 15px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 78px;
+  color: #f36e39;
+}
+h5 {
+  position: absolute;
+  width: 467px;
+  height: 69px;
+  left: 130px;
+  top: 350px;
+  margin-top: 40rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.btn {
+  position: absolute;
+  top: 95px;
 }

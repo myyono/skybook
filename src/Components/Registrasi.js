@@ -46,8 +46,23 @@ class Registrasi extends Component {
 		 		password : '',
 		}
 		
-		
+	// handleSubmit = (e) => { //arrow function 
+  //     e.preventDefault(); //akan merilaud ketika submit from 
+	// 		const {email, password} = this.state 
+	// 		fetchLogin.createUserWithEmailAndPassword(email, password)
+	// 		.then(res=>{
+	// 			fetchLogin.currentUser.sendEmailVerifcation()
+	// 			.then(()=>{
+	// 				alert('Mohon verifikasi email anda');
+	// 				this.props.history.push('/login');
+	// 			})
+	// 		})
+	// 		.catch(err =>{
+	// 			alert(err.mesage)
+	// 		})
+	// }
 	render() {
+		const {email, password} = this.state //distucring
 		return (
 			<Fragment>
 				<Grid container style={{justifyContent:'center'}}>
@@ -55,7 +70,7 @@ class Registrasi extends Component {
 						<Col lg={6} md={6} sn={12} className="text-center mt-10 p-2">
 						 <div className="LoginBox p-5">
 							 <img className="LoginImg" src={reg} alt="register" />
-						  <Form>
+						  <Form onSubmit={this.handleSubmit}>
 								<Form.Group>
 									<Form.Control type="email" placeholder="Enter email" />
 								</Form.Group>
