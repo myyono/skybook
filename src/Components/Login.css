@@ -1,10 +1,9 @@
-.icon-img {
-  width: 100%;
+.imgLogin {
+  width: 50%;
   height: 100%;
-  color: cornflowerblue;
   margin-bottom: 1rem;
   position: absolute;
-  top: 50px;
+  right: 30px;
 }
 h2 {
   position: absolute;
@@ -34,7 +33,11 @@ h5 {
   line-height: 29px;
   color: #000000;
 }
-.btn {
+.button {
   position: absolute;
   top: 95px;
+}
+.form {
+  position: absolute;
+  top: 50%;
 }

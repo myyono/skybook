@@ -1,67 +1,53 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
-import dia from '../gambar/Ellipse_bar.png';
-import ShareIcon from '@material-ui/icons/Share';
-import IconButton from '@material-ui/core/IconButton';
-import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
-import CardActions from '@material-ui/core/CardActions';
+import React from 'react'
+import { makeStyles } from '@material-ui/core/styles'
+import Card from '@material-ui/core/Card'
+import CardActionArea from '@material-ui/core/CardActionArea'
+import CardActions from '@material-ui/core/CardActions'
+import CardContent from '@material-ui/core/CardContent'
+import CardMedia from '@material-ui/core/CardMedia'
+import Button from '@material-ui/core/Button'
+import Typography from '@material-ui/core/Typography'
 
-
-
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   root: {
-    display: 'flex',
+    maxWidth: 345,
   },
-  details: {
-    display: 'flex',
-    flexDirection: 'column',
+  media: {
+    height: 140,
   },
-  content: {
-    flex: '1 0 auto',
-  },
-  cover: {
-    width: 151,
-  },
-  controls: {
-    display: 'flex',
-    alignItems: 'center',
-    paddingLeft: theme.spacing(1),
-    paddingBottom: theme.spacing(1),
-  },
-  playIcon: {
-    height: 38,
-    width: 38,
-  },
-}));
+})
 
-const  MediaControlCard = () => {
-  const classes = useStyles();
-  // const theme = useTheme();
+const MediaCard = () => {
+  const classes = useStyles()
 
   return (
     <Card className={classes.root}>
-      <div className={classes.details}>
-        <CardContent className={classes.content}>
-					<img src={dia} alt="iya" />
-          <Typography component="h5" variant="h5">
-            Supri Yono
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image="/static/images/cards/contemplative-reptile.jpg"
+          title="Contemplative Reptile"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Lizard
           </Typography>
-          <Typography variant="subtitle1" color="textSecondary">
-            26 Tahun
+          <Typography variant="body2" color="textSecondary" component="p">
+            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+            across all continents except Antarctica
           </Typography>
         </CardContent>
-				<IconButton aria-label="share">
-          <ShareIcon />
-					<CardActions disableSpacing>
-					<ThumbUpAltIcon />
-					</CardActions>
-        </IconButton>
-      </div>
+      </CardActionArea>
+      <CardActions>
+        <Button size="small" color="primary">
+          Share
+        </Button>
+        <Button size="small" color="primary">
+          Learn More
+        </Button>
+      </CardActions>
     </Card>
-  );
+  )
 }
 
-export default MediaControlCard;
+export default MediaCard

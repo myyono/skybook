@@ -1,0 +1,26 @@
+.kotak{
+	position: absolute;
+width: 622px;
+height: 55px;
+left: 409px;
+top: 120px;
+
+/* White */
+
+background: #FFFFFF;
+/* Solitude */
+
+border: 1.5px solid #F1F2F6;
+box-sizing: border-box;
+border-radius: 8px;
+}
+.notyfication {
+	right: -800px;
+	bottom: -6px;
+	position: relative;
+}
+.frofile {
+	right: -530px;
+	top: 4px;
+	position: relative;
+}
