@@ -1,71 +1,82 @@
-.card {
-  position: absolute;
+.chat{
+  position: relative;
   width: 622px;
   height: 202px;
-  left: 209px;
-  top: 4px;
-  margin-top: 3px;
-
-  background: #ffffff;
-
-  border: 1.5px solid #f1f2f6;
+  left: 265px;
+  top: 30px;
+  border: 2.5px solid #F1F2F6;
   box-sizing: border-box;
   border-radius: 8px;
+  background-color: whitesmoke;
 }
-.status {
+.chat img {
+  position: absolute;
+  width: 54px;
+  height: 56.23px;
+  left: 10px;
+  top: 8px;
+}
+.chat h3 {
+  position: absolute;
+  width: 93px;
+  height: 18.74px;
+  left: 70px;
+  top: 15px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #203758;
+
+}
+
+.chat h5 {
+  position: relative;
+  width: 67px;
+  height: 13.54px;
+  left: 73px;
+  top: -597px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #788292;
+}
+.chat p {
   position: absolute;
   width: 561px;
   height: 45.81px;
-  left: 44px;
-  top: 80px;
-
-  /* Content */
-
+  left: 20px;
+  top: 85px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 187.4%;
-  /* or 26px */
-
-  /* Catalina Blue */
-
   color: #203758;
+
 }
-.profile {
+.icon img {
   position: absolute;
-  width: 54px;
-  height: 56.23px;
-  left: 41px;
-  top: 181.82px;
-
-  opacity: 0.8;
-  /* White */
-
-  border: 2px solid #ffffff;
-  box-sizing: border-box;
-  filter: drop-shadow(-1px 1px 4px rgba(120, 130, 146, 0.5));
+  width: 25px;
+  height: 25px;
+  left: 580px;
+  top: 165px;
 }
-.share {
+.icon icon{
   position: absolute;
-  left: 95.04%;
-  right: -3.31%;
-  top: 11.54%;
-  bottom: 462px;
-  height: 20px;
-  width: 20px;
+  width: 25px;
+  height: 25px;
+  left: -35px;
+  top: 5px;
 
-  /* Info */
-
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 9px;
-  line-height: 11px;
-
-  /* Slate Grey */
-
-  color: #308658;
-
-  opacity: 0.5;
+}
+.icon h2 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -75px;
+  top: 4px;
 }

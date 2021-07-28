@@ -1,26 +1,69 @@
 .kotak{
 	position: absolute;
-width: 622px;
-height: 55px;
-left: 409px;
-top: 120px;
-
-/* White */
-
-background: #FFFFFF;
-/* Solitude */
-
-border: 1.5px solid #F1F2F6;
-box-sizing: border-box;
-border-radius: 8px;
+	width: 622px;
+	height: 60px;
+	left: 409px;
+	top: 120px;
+	border: 1.5px solid #F1F2F6;
+	box-sizing: border-box;
+	border-radius: 8px;
 }
-.notyfication {
-	right: -800px;
-	bottom: -6px;
-	position: relative;
+.card {
+	position: absolute;
+	width: 622px;
+	height: 770px;
+	left: 409px;
+	top: 400px;
+	background-color: whitesmoke;
+	border: 1.5px solid #F1F2F6;
+	box-sizing: border-box;
+	border-radius: 8px;
 }
-.frofile {
-	right: -530px;
-	top: 4px;
-	position: relative;
+.card img {
+	position: absolute;
+  width: 54px;
+  height: 56.23px;
+  left: 10px;
+  top: 8px;
 }
+.card h4 {
+	position: absolute;
+  width: 93px;
+  height: 18.74px;
+  left: 70px;
+  top: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #203758;
+}
+.card h5 {
+	position: absolute;
+  width: 93px;
+  height: 10px;
+  left: 70px;
+  top: -610px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #203758;
+}
+.card p {
+	position: absolute;
+	width: 553px;
+	height: 24px;
+	left: 41px;
+	top: 80px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 187.4%;
+	color: #203758;
+
+}
+
