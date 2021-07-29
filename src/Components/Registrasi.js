@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Button, Container, Grid, TextField } from '@material-ui/core'
 import { Link } from 'react-router-dom'
+import './Registrasi.css'
 
 class Registrasi extends Component {
 	state = {
@@ -62,14 +63,14 @@ class Registrasi extends Component {
 			<Container>
 				<Grid container style={{ justifyContent: 'center' }}>
 					<Grid xs="4">
-						<h2>Halaman register</h2>
-						<form>
+						{/* <h2>Halaman register</h2> */}
+						<form className="fro">
 							<TextField type="nama" fullWidth margin="dense" variant="outlined" size="small" value={nama} onChange={this.handleChangeField} name="nama" label="nama" required />
-							<TextField type="email" fullWidth margin="dense" variant="outlined" size="small" value={email} onChange={this.handleChangeField} name="email" label="email" required />
-							<TextField type="password" fullWidth margin="dense" variant="outlined" size="small" value={password} onChange={this.handleChangeField} name="password" label="passowrd" required />
-							<Button onClick={() => this.CreateUser()} fullWidth variant="contained" color="primary">Register</Button>
+							<TextField type="email" fullWidth margin="dense" className="mt-3" variant="outlined" size="small" value={email} onChange={this.handleChangeField} name="email" label="email" required />
+							<TextField type="password" fullWidth margin="dense" variant="outlined" className="mt-3" size="small" value={password} onChange={this.handleChangeField} name="password" label="passowrd" required />
+							<Button onClick={() => this.CreateUser()} className="mt-3" fullWidth variant="contained" color="primary">Register</Button>
+							<p>Sudah punya akun?<Link to="/login">Masuk</Link></p>
 						</form>
-						<p>Sudah punya akun?<Link to="/login">Masuk</Link></p>
 					</Grid>
 				</Grid>
 			</Container>

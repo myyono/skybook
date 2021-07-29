@@ -1,39 +1,33 @@
-import React, { Component, Fragment } from 'react'
-import Example from '../HomeList/status.jsx'
+import React, { Component } from 'react'
 import './Home.css'
-import my from '../gambar/Ellipse_bar.png'
-import share from '../gambar/Share.png'
-import comment from '../gambar/Comment.png'
-import like from '../gambar/Like.png'
+import ButtonAppBar from "../HomeList/AppBar"
+import Card from '../HomeList/Card.jsx'
+import Card2 from '../HomeList/Card2'
 
 class Home extends Component {
 	state = {
+		posts: [
+			{
+				name: 'supriyono',
+				timeStamp: '40 mins a go',
+				message: 'Being a father is sometimes my hardest but always my most rewarding job. Happy Father’s Day to all dads out there.',
+			}
+		]
+
+
 
 	}
+
+
 	render() {
 		return (
-			<Fragment>
-				<div>
-					<Example />
+			<div className="container">
+				<div className="appBar">
+					<ButtonAppBar />
+					<Card />
+					<Card2 />
 				</div>
-				<br />
-				<br />
-				<div className="chat">
-					<img src={my} alt="" />
-					<h3>Supri Yono</h3>
-					<h5>45 mins ago</h5>
-					<p>Being a father is sometimes my hardest but always my most rewarding job. Happy Father’s Day to all dads out there. </p>
-					<div className="icon">
-						<img src={share} alt="" />
-						<icon>
-							<img src={comment} alt="" />
-						</icon>
-						<h2>
-							<img src={like} alt="" />
-						</h2>
-					</div>
-				</div>
-			</Fragment>
+			</div>
 		)
 	}
 }

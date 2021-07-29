@@ -1,82 +1,11 @@
-.chat{
-  position: relative;
+/* .comment {
+  position: absolute;
   width: 622px;
-  height: 202px;
-  left: 265px;
-  top: 30px;
-  border: 2.5px solid #F1F2F6;
+  height: 770px;
+  left: 409px;
+  top: 377px;
+  background: #631010;
+  border: 1.5px solid #F1F2F6;
   box-sizing: border-box;
   border-radius: 8px;
-  background-color: whitesmoke;
-}
-.chat img {
-  position: absolute;
-  width: 54px;
-  height: 56.23px;
-  left: 10px;
-  top: 8px;
-}
-.chat h3 {
-  position: absolute;
-  width: 93px;
-  height: 18.74px;
-  left: 70px;
-  top: 15px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
-  color: #203758;
-
-}
-
-.chat h5 {
-  position: relative;
-  width: 67px;
-  height: 13.54px;
-  left: 73px;
-  top: -597px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 11px;
-  line-height: 13px;
-  color: #788292;
-}
-.chat p {
-  position: absolute;
-  width: 561px;
-  height: 45.81px;
-  left: 20px;
-  top: 85px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 187.4%;
-  color: #203758;
-
-}
-.icon img {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  left: 580px;
-  top: 165px;
-}
-.icon icon{
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  left: -35px;
-  top: 5px;
-
-}
-.icon h2 {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  left: -75px;
-  top: 4px;
-}
+} */

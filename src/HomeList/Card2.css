@@ -1,0 +1,38 @@
+.kotak {
+  position: absolute;
+	width: 622px;
+	height: 770px;
+	left: 420px;
+	top: 347px;
+	background: whitesmoke;
+	border: 1.5px solid #F1F2F6;
+	box-sizing: border-box;
+	border-radius: 8px;
+}
+.buah {
+	text-align: center;
+}
+.kotak h1 {
+	position: absolute;
+	width: 120px;
+	height: 18px;
+	left: 52px;
+	top: 5px;
+
+	/* Secion Header */
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;
+
+	/* Catalina Blue */
+
+	color: #203758;
+}
+.kotak h5 {
+	position: absolute;
+	top: 25px;
+	left: 55px;
+}

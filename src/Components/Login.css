@@ -1,36 +1,31 @@
-.imgLogin {
-  width: 50%;
-  height: 100%;
-  margin-bottom: 1rem;
-  position: absolute;
-  right: 30px;
-}
 h2 {
   position: absolute;
   width: 297px;
-  height: 78px;
-  left: 200px;
-  text-align: center;
-  top: 15px;
+  height: 600%;
+  left: 230px;
+  top: 159px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 800;
   font-size: 64px;
   line-height: 78px;
-  color: #f36e39;
+  color: #F36E39;
+  max-width: max-content;
+
 }
-h5 {
+h1 {
   position: absolute;
   width: 467px;
   height: 69px;
-  left: 130px;
-  top: 350px;
-  margin-top: 40rem;
+  left: 230px;
+  top: 251px;
+
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
+
   color: #000000;
 }
 .button {
@@ -39,5 +34,12 @@ h5 {
 }
 .form {
   position: absolute;
-  top: 50%;
+  width: 445px;
+  height: 317px;
+  left: 765px;
+  top: 161px;
+
+  background: whitesmoke;
+  border-radius: 10px;
 }
+

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Button, Container, Grid, TextField } from '@material-ui/core'
 import { Link } from "react-router-dom"
 import './Login.css'
-import loginImg from '../gambar/mylogin.svg'
 
 class Login extends Component {
 	state = {
@@ -61,15 +60,13 @@ class Login extends Component {
 				<Grid container style={{ justifyContent: 'left' }}>
 					<Grid xs="4">
 						<h2>SkyBook</h2>
+						<h1> Skybook membantu Anda terhubung dan berbagi dengan orang-orang dalam kehidupan Anda.</h1>
 						<from className="form">
-							<TextField type="email" fullWidth margin="dense" variant="outlined" size="small" value={email} onChange={this.handleChangeField} name="email" label="email" required />
-							<TextField type="password" fullWidth margin="dense" variant="outlined" size="small" value={password} onChange={this.handleChangeField} name="password" label="passowrd" required />
-							<Button onClick={() => this.CreatePage()} fullWidth variant="contained" color="primary">Login</Button>
+							<TextField type="email" className='mb-3' fullWidth margin="dense" variant="outlined" size="small" value={email} onChange={this.handleChangeField} name="email" label="email" required />
+							<TextField type="password" mt-3 fullWidth margin="dense" variant="outlined" size="small" value={password} onChange={this.handleChangeField} name="password" label="passowrd" required />
+							<Button onClick={() => this.CreatePage()} className='mt-3 mb-3' fullWidth variant="contained" color="secondary">Login</Button>
 							<p>Belum punya akun?<Link to="/registrasi">Sign Up</Link></p>
 						</from>
-						<div className="imgLogin">
-							<img src={loginImg} alt="login" />
-						</div>
 					</Grid>
 				</Grid>
 			</Container>
