@@ -1,0 +1,40 @@
+.comment {
+	position: absolute;
+	width: 253px;
+	height: 63px;
+	left: 210px;
+	top: 235px;
+
+	background: #F1F2F6;
+	border-radius: 10px;
+}
+/* .jane {
+	position: absolute;
+	left: 30px;
+}
+.comments {
+	position: relative;
+	left: 90px;
+} */
+.comment h5 {
+	position: absolute;
+width: 225px;
+height: 26px;
+left: px;
+top: 34px;
+
+/* Content */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 187.4%;
+/* or 26px */
+
+
+/* Catalina Blue */
+
+color: #203758;
+
+}

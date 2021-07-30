@@ -2,6 +2,10 @@ import React from 'react'
 import './Card2.css'
 import mira from '../gambar/human/people/3.png'
 import Image from "./Image"
+import share from '../gambar/ic/icons/Share.png'
+import comment from '../gambar/ic/icons/Comment.png'
+import like from '../gambar/ic/icons/Like.png'
+
 const Card2 = () => {
 	return (
 		<div className="kotak">
@@ -12,6 +16,9 @@ const Card2 = () => {
 			<span className="buah">
 				<Image />
 			</span>
+			<img src={share} className="sha" alt="sahre" />
+			<img src={comment} className="ment" alt="com" />
+			<img src={like} className="like" alt="lik" />
 		</div>
 	)
 }

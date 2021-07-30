@@ -1,11 +1,21 @@
-/* .comment {
-  position: absolute;
-  width: 622px;
-  height: 770px;
-  left: 409px;
-  top: 377px;
-  background: #631010;
-  border: 1.5px solid #F1F2F6;
-  box-sizing: border-box;
-  border-radius: 8px;
-} */
+.user {
+  position: relative;
+  top: 500px;
+  left: 300px;
+}
+.buku {
+  position: relative;
+  top: -260px;
+  left: -200px;
+}
+
+.may {
+  position: relative;
+  top: 500px;
+  left: 300px;
+}
+.tari {
+  position: relative;
+  top: -260px;
+  left: -200px;
+}

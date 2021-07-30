@@ -41,6 +41,8 @@ class Login extends Component {
 				if (userlogin.error) {
 					alert('email anda salah, mohon isi email dan password dengan benar')
 				} else {
+					console.log("inihme", userlogin)
+					localStorage.setItem("inihome", userlogin.access_token)
 					window.location.href = '/home'
 					console.log('Berhasil Hore')
 				}

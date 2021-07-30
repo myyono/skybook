@@ -36,3 +36,21 @@
 	top: 25px;
 	left: 55px;
 }
+.sha {
+	position: absolute;
+	height: 20px;
+	top: 380px;
+	left: 580px;
+}
+.ment {
+	position: absolute;
+	height: 20px;
+	top: 380px;
+	left: 540px;
+}
+.like {
+	position: absolute;
+	height: 20px;
+	top: 380px;
+	left: 500px;
+}
