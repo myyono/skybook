@@ -1,5 +1,5 @@
 import React from 'react'
-import my from '../gambar/human/people/2.png'
+import my from '../gambar/human/people/3.png'
 import share from '../gambar/ic/icons/Share.png'
 import comment from '../gambar/ic/icons/Comment.png'
 import like from '../gambar/ic/icons/Like.png'

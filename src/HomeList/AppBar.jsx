@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import human from '../gambar/human/people/1.jpg'
-import notif from '../gambar/ic/icons/icons.jpg'
+import skydu from '../gambar/ic/icons/skydu.jpg'
 import './AppBar.css'
 
 const useStyles = makeStyles((theme) => ({
@@ -29,10 +29,10 @@ const ButtonAppBar = () => {
 			<AppBar position="static">
 				<Toolbar>
 					<IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-						<MenuIcon />
+						SkyBook
 					</IconButton>
 					<Typography variant="h6" className={classes.title}>
-						<img src={notif} className="notify" alt="notifycation" />
+						<img src={skydu} className="notify" alt="notifycation" />
 					</Typography>
 					<div className="humant"></div>
 					<img src={human} alt="humanis" />
