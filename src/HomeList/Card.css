@@ -1,14 +1,14 @@
 .card {
 	position: relative;
-  width: 652px;
+  width: 615px;
   height: 470px;
-  left: 265px;
+  left: 260px;
   top: 30px;
   border: 2.5px solid #F1F2F6;
   box-sizing: border-box;
   border-radius: 8px;
   background-color: whitesmoke;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .img {
 	position: absolute;

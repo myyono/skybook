@@ -14,6 +14,7 @@ const Card = (props) => {
 			<h3>{props.name}</h3>
 			<h5>{props.timeStamp}</h5>
 			<p>{props.message}</p>
+			<img src={"http://127.0.0.1:8000/storage/posts/" + props.images} />
 			<img src={share} className="sharre" alt="sahre" />
 			<img src={comment} className="com" alt="com" />
 			<img src={like} className="lik" alt="lik" />
