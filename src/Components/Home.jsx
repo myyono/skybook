@@ -110,19 +110,19 @@ class Home extends Component {
 					<input {...inputAttr} onChange={this.handleChangeField} style={{
 						position: 'absolute',
 						width: 622,
-						height: 120,
+						height: 200,
 						left: 409,
 						top: 92,
 						background: '#FFFFFF',
 						border: ' 1.5 solid #F1F2F6',
 						boxRadius: 'border-box',
 						borderRadius: 8,
-						textAlign: 'center'
+						textAlign: 'center',
 					}}
 					/>
-					<input onChange={this.handleField} type="file" id="myfile" name="myfile" />
+					<input onChange={this.handleField} type="file" id="myfile" name="myfile" style={{ position: 'absolute', top: 250, right: 460 }} />
 
-					<button onClick={() => this.CreatePost()} type="button" class="btn btn-primary" style={{ position: 'absolute', top: 150, left: 415 }}>Kirim</button>
+					<button onClick={() => this.CreatePost()} type="button" class="btn btn-primary" style={{ position: 'absolute', top: 250, left: 415 }}>Kirim</button>
 					<button type="button" class="btn btn-outline-primary" className="mt-5"><Link to="/login">LOGOUT</Link></button>
 					{this.state.posts.map((data) => {
 						return <Card name={data.user.name} message={data.caption} images={data.image} />

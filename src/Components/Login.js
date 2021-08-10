@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Button, Container, Grid, TextField } from '@material-ui/core'
 import { Link } from "react-router-dom"
+import Log from "../logGol"
 import './Login.css'
 
 
@@ -28,6 +29,7 @@ class Login extends Component {
 
 
 	}
+
 	fetchLogin = (userlogin) => {
 		console.log(userlogin.username, userlogin.password)
 		fetch('http://127.0.0.1:8000/oauth/token', {
@@ -68,12 +70,16 @@ class Login extends Component {
 							<TextField type="email" className='mb-3' fullWidth margin="dense" variant="outlined" size="small" value={email} onChange={this.handleChangeField} name="email" label="email" required />
 							<TextField type="password" mt-3 fullWidth margin="dense" variant="outlined" size="small" value={password} onChange={this.handleChangeField} name="password" label="passowrd" required />
 							<Button onClick={() => this.CreatePage()} className='mt-3 mb-3' fullWidth variant="contained" color="secondary">Login</Button>
+							<Log />
 							<p>Belum punya akun?<Link to="/registrasi">Sign Up</Link></p>
 						</from>
 					</Grid>
 				</Grid>
 			</Container>
+
 		)
 	}
 }
+
+
 export default Login
