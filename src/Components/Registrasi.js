@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Button, Container, Grid, TextField } from '@material-ui/core'
 import { Link } from 'react-router-dom'
 import './Registrasi.css'
-
+import RegGoegle from "../logGol"
 class Registrasi extends Component {
 	state = {
 		nama: '',
@@ -69,6 +69,7 @@ class Registrasi extends Component {
 							<TextField type="email" fullWidth margin="dense" className="mt-3" variant="outlined" size="small" value={email} onChange={this.handleChangeField} name="email" label="email" required />
 							<TextField type="password" fullWidth margin="dense" variant="outlined" className="mt-3" size="small" value={password} onChange={this.handleChangeField} name="password" label="passowrd" required />
 							<Button onClick={() => this.CreateUser()} className="mt-3" fullWidth variant="contained" color="primary">Register</Button>
+							<RegGoegle />
 							<p>Sudah punya akun?<Link to="/login">Masuk</Link></p>
 						</form>
 					</Grid>

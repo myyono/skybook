@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './Home.css'
-import { Link } from "react-router-dom"
 import Card from '../HomeList/Card.jsx'
 import { Input } from "reactstrap"
 import skydu from '../gambar/ic/icons/skydu.jpg'
@@ -25,7 +24,10 @@ class Home extends Component {
 		}
 		this.fetchPost(userPost)
 	};
-
+	CreateBack = () => {
+		localStorage.removeItem("inihome")
+		window.location.href = "/Login"
+	}
 
 	handleChangeField = (e) => {
 		this.setState({ [e.target.name]: e.target.value })
@@ -64,6 +66,10 @@ class Home extends Component {
 
 	componentDidMount() {
 		let home = localStorage.getItem("inihome")
+		if (home == null) {
+			window.location.href = '/login'
+			return false
+		}
 		fetch("http://127.0.0.1:8000/api/dashboard/home", {
 			headers: {
 				Authorization: `Bearer ${home}`,
@@ -123,7 +129,7 @@ class Home extends Component {
 					<input onChange={this.handleField} type="file" id="myfile" name="myfile" style={{ position: 'absolute', top: 250, right: 460 }} />
 
 					<button onClick={() => this.CreatePost()} type="button" class="btn btn-primary" style={{ position: 'absolute', top: 250, left: 415 }}>Kirim</button>
-					<button type="button" class="btn btn-outline-primary" className="mt-5"><Link to="/login">LOGOUT</Link></button>
+					<button onClick={() => this.CreateBack()} type="button" class="btn btn-outline-primary" className="mt-5">LOGOUT</button>
 					{this.state.posts.map((data) => {
 						return <Card name={data.user.name} message={data.caption} images={data.image} />
 

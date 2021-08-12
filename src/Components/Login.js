@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Button, Container, Grid, TextField } from '@material-ui/core'
 import { Link } from "react-router-dom"
-import Log from "../logGol"
 import './Login.css'
+import LogGoegle from "../HomeList/HomeGol"
 
 
 class Login extends Component {
@@ -28,6 +28,13 @@ class Login extends Component {
 		this.setState({ [e.target.name]: e.target.value })
 
 
+	}
+	componentDidMount() {
+		let home = localStorage.getItem("inihome")
+		if (home != null) {
+			window.location.href = '/home'
+			return false
+		}
 	}
 
 	fetchLogin = (userlogin) => {
@@ -70,7 +77,7 @@ class Login extends Component {
 							<TextField type="email" className='mb-3' fullWidth margin="dense" variant="outlined" size="small" value={email} onChange={this.handleChangeField} name="email" label="email" required />
 							<TextField type="password" mt-3 fullWidth margin="dense" variant="outlined" size="small" value={password} onChange={this.handleChangeField} name="password" label="passowrd" required />
 							<Button onClick={() => this.CreatePage()} className='mt-3 mb-3' fullWidth variant="contained" color="secondary">Login</Button>
-							<Log />
+							<LogGoegle />
 							<p>Belum punya akun?<Link to="/registrasi">Sign Up</Link></p>
 						</from>
 					</Grid>
